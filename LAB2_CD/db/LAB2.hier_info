@@ -1,0 +1,50 @@
+|LAB2
+A => PortaAnd:u1.A3
+A => PortaAnd:u3.A3
+B => PortaAnd:u1.B3
+B => PortaAnd:u2.A3
+B => PortaXor:u5.A2
+C => PortaAnd:u2.B3
+C => PortaAnd:u3.B3
+C => PortaXor:u5.B2
+S1 << PortaOr3Entradas:u4.S6
+S2 << PortaOr:u6.S3
+
+
+|LAB2|PortaAnd:u1
+A3 => S5.IN0
+B3 => S5.IN1
+S5 <= S5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LAB2|PortaAnd:u2
+A3 => S5.IN0
+B3 => S5.IN1
+S5 <= S5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LAB2|PortaAnd:u3
+A3 => S5.IN0
+B3 => S5.IN1
+S5 <= S5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LAB2|PortaOr3Entradas:u4
+A4 => S6.IN0
+B4 => S6.IN1
+C4 => S6.IN1
+S6 <= S6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LAB2|PortaXor:u5
+A2 => S4.IN0
+B2 => S4.IN1
+S4 <= S4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LAB2|PortaOr:u6
+A1 => S3.IN0
+B1 => S3.IN1
+S3 <= S3.DB_MAX_OUTPUT_PORT_TYPE
+
+

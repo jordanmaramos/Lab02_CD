@@ -1,0 +1,21 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+component PortaAnd3Entradas is 
+port (
+	A, B, C: in bit;
+	S1: out bit
+);
+end component;
+
+entity LAB2 is
+port(
+	A, B: in bit;
+	S1: out bit
+);
+end LAB2;
+
+architecture main of LAB2 is
+begin
+	S2 <= PortaAnd3Entradas
+end architecture main;
